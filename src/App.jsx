@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import Todolist from './assets/components/todolist';
+// import Todolist from './assets/components/todolist';
 
 function App() {
 // Counter logic
@@ -105,9 +105,12 @@ className="input"
 </div>
 
 {/* Todo List Section */}
-<div>
+{
+
+/* <div>
 <Todolist />
-</div>
+</div> */
+}
 </div>
 </main>
 );
