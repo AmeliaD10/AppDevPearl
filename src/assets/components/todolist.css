@@ -1,3 +1,4 @@
+/* Base styling */
 .todo-container {
   width: 80%;
   max-width: 800px;
@@ -45,7 +46,6 @@ th {
 }
 
 .completed-status {
-
   color: rgb(0, 0, 0);
 }
 
@@ -55,4 +55,70 @@ th {
 
 .not-completed {
   background-color: #ffebee;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .todo-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  th, td {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+
+  .todo-title {
+    font-size: 0.9rem;
+  }
+
+  .status {
+    font-size: 0.8rem;
+  }
+
+  .completed-status, .not-completed-status {
+    font-size: 0.8rem;
+  }
+
+  .todo-table {
+    margin-top: 10px;
+  }
+}
+
+/* Extra small screens (phones in portrait mode) */
+@media (max-width: 480px) {
+  .todo-container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  th, td {
+    padding: 8px 10px;
+    font-size: 0.8rem;
+  }
+
+  .todo-title {
+    font-size: 0.8rem;
+  }
+
+  .status {
+    font-size: 0.7rem;
+  }
+
+  .completed-status, .not-completed-status {
+    font-size: 0.7rem;
+  }
+
+  .todo-table {
+    margin-top: 5px;
+  }
 }
